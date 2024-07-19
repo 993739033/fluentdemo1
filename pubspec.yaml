@@ -1,0 +1,93 @@
+name: fluentdemo1
+description: "FluentUIDemo"
+publish_to: 'none'
+#https://joylinkx.xyz/web5/
+version: 1.0.1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  #****核心*******
+  fluent_ui: ^4.8.7
+  provider: ^6.1.2
+  go_router: ^14.2.0
+  logger: ^2.3.0
+  dio: ^5.4.3+1
+  #自动生成bean文件
+  json_annotation: ^4.9.0
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+  #***********
+
+  #*****功能库******
+  system_theme: ^2.3.1
+  window_manager: ^0.3.9
+  flutter_acrylic: ^1.1.4
+  url_strategy: ^0.2.0
+  clipboard: ^0.1.3
+  flutter_markdown: ^0.7.3
+  flutter_syntax_view: ^4.1.0
+  path_provider: ^2.1.3
+  file_picker: ^8.0.5
+  qr_flutter: ^4.1.0
+  flutter_svg: ^2.0.10+1
+  desktop_drop: ^0.4.4
+  url_launcher: ^6.3.0
+  #***********
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.9
+  json_serializable: ^6.8.0
+  flutter_native_splash: ^2.4.0 #dart run flutter_native_splash:create
+  flutter_launcher_icons: ^0.13.1 #flutter pub run flutter_launcher_icons
+
+#dependency_overrides:
+#  intl: ^0.18.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/logo.jpeg
+    - assets/bj1.webp
+    - assets/bj2.jpg
+  fonts:
+    - family: YozaiMedium
+      fonts:
+        - asset: assets/Yozai-Medium.ttf
+
+flutter_intl:
+  enabled: true
+  class_name: S # 设置自动生成的LocalizationsDelegate<T>中T的类型名字。默认是 S。
+  main_locale: en # 设置语言，默认是英语 Default: en.
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logo.jpeg
+
+flutter_icons:
+  android: false
+  ios: false
+  image_path: "assets/logo.jpeg"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/logo.jpeg"
+    background_color: "202020"
+    theme_color: "0175C2"
+  windows:
+    generate: true
+    image_path: "assets/logo.jpeg"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/logo.jpeg"
+

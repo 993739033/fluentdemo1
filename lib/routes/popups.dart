@@ -1,0 +1,1 @@
+export '../screens/popups/popupview.dart';

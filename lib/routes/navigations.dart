@@ -1,0 +1,1 @@
+export '../screens/navigations/navigationview.dart';
